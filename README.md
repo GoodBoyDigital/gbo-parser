@@ -14,7 +14,7 @@ convertObjToGbo('./myObj.obj', './myGbo.gbo');
 To read a file a js enviroment:
 
 ```
-import {convertObjToGbo} from 'gbo-reader';
+import {readGbo} from 'gbo-reader';
 
 var oReq = new XMLHttpRequest();
 oReq.open("GET", './myGbo.gbo', true);
