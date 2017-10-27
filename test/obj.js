@@ -2,12 +2,12 @@ var fs = require('fs');
 var assert = require('assert');
 var chai = require('chai');
 
-var convertObjToGBO = require('../convert-obj-to-gbo');
+var convertObjToGBO = require('../lib/convert-obj-to-gbo');
 var objParser = require('../lib/objParser.js');
 var packFormat = require('../lib/packFormat.js');
 var readFormat = require('../lib/readFormat.js');
 var getBounds = require('../lib/getBounds.js');
-var readGbo = require('../read-gbo.js');
+var readGbo = require('../lib/read-gbo.js');
 
 var objFile = './test/cube.obj'
 var gboFile = './test/cube.gbo'
