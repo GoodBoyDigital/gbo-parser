@@ -1,5 +1,5 @@
 
 module.exports = {
-	convertObjToGbo:require('convert-obj-to-gbo.js'),
-	readGbo:require('read-gbo.js')
+	convertObjToGbo:require('./lib/convert-obj-to-gbo.js'),
+	readGbo:require('./lib/read-gbo.js')
 }
