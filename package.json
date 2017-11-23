@@ -1,6 +1,6 @@
 {
   "name": "gbo-reader",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A reader for goodboys gbo file format.",
   "main": "index.js",
   "repository": {
@@ -16,5 +16,8 @@
     "chai": "^4.1.2",
     "obj2gltf": "^2.0.0",
     "qunit-assert-close": "^2.1.2"
+  },
+  "dependencies": {
+    "chai": "^4.1.2"
   }
 }

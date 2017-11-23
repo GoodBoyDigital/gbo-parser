@@ -41,6 +41,19 @@ describe('obj converting', function()
 
         });
 
+        it('should measure bounds correctly if first bounds is the highest', function()
+        {
+            var positions = [0.025969, -0.5, 0.000000,
+                            -2.803509, -1.427681, 0.000000,
+                             0.025969, -1.427681, 0.000000,
+                             0.025969, -2.373654, 0.000000]
+
+            var bounds = getBounds(positions);
+
+            assert.equal(bounds.minY,  -2.373654);
+            assert.equal(bounds.maxY, -0.5);
+        }),
+
         it('pack format correctly', function()
         {
          //   return;
@@ -71,11 +84,6 @@ describe('obj converting', function()
             assert.equal(bounds.maxY, 0.5);
             assert.equal(bounds.minZ, -0.5);
             assert.equal(bounds.maxZ, 0.5);
-        });
-
-        it('from obj to gbo', function()
-        {
-
         });
 
         it('from obj to gbo', function()
